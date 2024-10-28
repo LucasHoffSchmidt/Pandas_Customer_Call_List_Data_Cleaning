@@ -2,6 +2,7 @@
 In this project we clean a customer call list using the python library of pandas.
 
 ## Tools and technologies
+- **Jupyter Notebook**
 - **Python**: Data cleaning
   - Pandas 
 
