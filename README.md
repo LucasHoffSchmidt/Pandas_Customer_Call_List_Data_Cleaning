@@ -14,6 +14,7 @@ In this project we clean a customer call list using the python library of pandas
 
 ## Analysis steps
 - **Data Cleaning**:
+  - Import pandas
   - Transformed the customer call list to a dataframe
   - Removed duplicates
   - Removed irrelevant columns
