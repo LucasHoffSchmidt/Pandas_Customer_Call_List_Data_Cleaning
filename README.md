@@ -1,5 +1,5 @@
 # Python Pandas Customer Call List Data Cleaning
-In this project we used Jupyter Notebook to clean a customer call list using the python library of pandas.
+In this project we used python in Jupyter Notebook to clean a customer call list using the python library of pandas.
 
 ## Tools and technologies
 - **Jupyter Notebook**
