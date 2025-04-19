@@ -2,8 +2,8 @@
 In this project we used pandas to clean a customer call list. 
 
 ## Quick Links
-- Original dataset: [Customer Call List Dataset](customer_call_list.xlsx)
-- Cleaned dataset: [Cleaned Customer Call List Dataset](cleaned_customer_call_list)
+- Original customer call list dataset: [Customer Call List Dataset](customer_call_list.xlsx)
+- Cleaned customer call list dataset: [Cleaned Customer Call List Dataset](cleaned_customer_call_list)
 - Jupyter Notebook of cleaning the customer call list dataset: [Jupyter Notebook](customer_call_list_data_cleaning_project.ipynb)
 - Other projects I have made: [Portfolio Website](https://lucashoffschmidt.github.io/)
 
