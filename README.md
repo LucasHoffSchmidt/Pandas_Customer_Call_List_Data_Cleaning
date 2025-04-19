@@ -12,16 +12,14 @@ In this project we used pandas to clean a customer call list.
 - **Pandas**: Data cleaning.
 
 ## Process
-- Created a new Jupyter Notebook and imported pandas.
-- Transformed the customer call list dataset to a dataframe using read_excel().
-- Removed duplicates using drop_duplicates() and removed irrelevant columns using drop().
-- Removed irrelevant characters from the beginning and end of last name values using str.strip().
-- Standardized all phone number values to the same format using apply() and str.replace().
-- Standardized values in the columns Paying Customer and Do_Not_Contact using str.replace().
-- Split the address column into distinct columns using str.split().
+- Created a new Jupyter Notebook, imported pandas and loaded the customer call list dataset into a dataframe using read_excel().
+- Removed duplicates and irrelevant columns with drop_duplicates() and drop().
+- Cleaned last name values with str.strip().
+- Standardized phone numbers and and categorical columns with apply() and str.replace().
+- Split the address column into multiple columns with str.split().
 - Replaced not available and NaN values with empty strings using replace() and fillna().
-- Removed irrelevant rows based on the Do_Not_Contact column using a for loop, loc[] and drop().
-- Reset the index to show numbers incrementally from 0 by using reset_index().
+- Removed rows marked Do_Not_Contact using a for loop, loc[] and drop().
+- Reset the index with reset_index().
 
 ## Cleaned Customer Call List
 ![Cleaned Customer Call List](cleaned_customer_call_list.png)
