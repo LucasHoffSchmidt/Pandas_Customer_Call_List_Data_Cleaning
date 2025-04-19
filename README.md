@@ -7,7 +7,7 @@ In this project we used pandas to clean a customer call list.
 - Jupyter Notebook of cleaning the customer call list dataset: [Jupyter Notebook](customer_call_list_data_cleaning_project.ipynb)
 - Other projects I have made: [Portfolio Website](https://lucashoffschmidt.github.io/)
 
-## Tools Used
+## Technologies Used
 - **Jupyter Notebook**: Web-based interactive computing environment. 
 - **Pandas**: Data cleaning.
 
