@@ -15,7 +15,7 @@ In this project we used pandas to clean a customer call list.
 - Created a new Jupyter Notebook, imported pandas and loaded the customer call list dataset into a dataframe using read_excel().
 - Removed duplicates and irrelevant columns with drop_duplicates() and drop().
 - Cleaned last name values with str.strip().
-- Standardized phone numbers and and categorical columns with apply() and str.replace().
+- Standardized phone numbers and categorical columns with apply() and str.replace().
 - Split the address column into multiple columns with str.split().
 - Replaced not available and NaN values with empty strings using replace() and fillna().
 - Removed rows marked Do_Not_Contact using a for loop, loc[] and drop().
