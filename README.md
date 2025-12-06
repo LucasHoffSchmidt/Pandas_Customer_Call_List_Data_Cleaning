@@ -1,10 +1,10 @@
 # Pandas Customer Call List Data Cleaning
-In this project we used pandas to clean a customer call list. 
+In this project we use pandas to clean a customer call list. 
 
 ## Quick Links
-- Original customer call list dataset: [Customer Call List Dataset](customer_call_list.xlsx)
-- Cleaned customer call list dataset: [Cleaned Customer Call List Dataset](cleaned_customer_call_list.png)
-- Jupyter Notebook of cleaning the customer call list dataset: [Jupyter Notebook](customer_call_list_data_cleaning_project.ipynb)
+- Raw customer call list dataset: [Raw Customer Call List](customer_call_list.xlsx)
+- Cleaned customer call list dataset: [Cleaned Customer Call List](cleaned_customer_call_list.xlsx)
+- Jupyter Notebook of the cleaning process: [Jupyter Notebook](customer_call_list_data_cleaning_project.ipynb)
 - Other projects I have made: [Portfolio Website](https://lucashoffschmidt.github.io/)
 
 ## Technologies Used
@@ -12,14 +12,47 @@ In this project we used pandas to clean a customer call list.
 - **Pandas**: Data cleaning.
 
 ## Process
-- Created a new Jupyter Notebook, imported pandas and loaded the customer call list dataset into a dataframe using read_excel().
-- Removed duplicates and irrelevant columns with drop_duplicates() and drop().
-- Cleaned last name values with str.strip().
-- Standardized phone numbers and categorical columns with apply() and str.replace().
-- Split the address column into multiple columns with str.split().
-- Replaced not available and NaN values with empty strings using replace() and fillna().
-- Removed rows marked Do_Not_Contact using a for loop, loc[] and drop().
-- Reset the index with reset_index().
+- Created a new Jupyter Notebook, imported pandas and loaded the customer call list dataset into a dataframe
+<img src="images/read_excel.png" alt="Converting excel file to pandas dataframe" width="350">
+
+- Removed duplicate rows
+<img src="images/drop_duplicates.png" alt="Dropping duplicate rows" width="400">
+
+- Removed redundant columns
+<img src="images/drop_redundant.png" alt="Dropping redundant columns" width="350">
+
+- Removed irrelevant characters from last name values
+<img src="images/last_name.png" alt="Cleaning last name values" width="600">
+
+- Standardized phone numbers
+<img src="images/phone_values.png" alt="Standardizing phone values to the format 000-000-0000" width="800">
+
+- Standardized Paying Customer and Do_Not_Contact columns
+<img src="images/standardize.png" alt="Standardizing columns to Y and N for yes and no" width="700">
+
+- Split the address column into its constituent elements
+<img src="images/address.png" alt="Splitting the address column into street, state and zip code" width="650">
+
+- Replaced not available and NaN values with empty strings
+<img src="images/NaN.png" alt="Replacing NaN and N/a values with empty strings" width="450">
+
+- Removed customers that may not want to be contacted
+<img src="images/no_contact.png" alt="Removing customer with Y or empty string in Do_Not_Contact column" width="600">
+
+- Removed customer that cannot be contacted
+<img src="images/cant_contact.png" alt="Removing customers with no phone number associated with them" width="500">
+
+- Dropped columns that only contained empty strings
+<img src="images/empty_strings.png" alt="Dropping any column with only empty string across all rows" width="400">
+
+- Reset the index
+<img src="images/reset_index.png" alt="Resetting the index to show incremental numbers from 0" width="400">
+
+- Saved cleaned dataframe to an excel file
+<img src="images/save_excel.png" alt="Saving dataframe to an excel file" width="600">
+
+## Raw Customer Call List
+<img src="images/raw_customer_call_list.png" alt="Raw customer call list before any cleaning has been done" width="1000">
 
 ## Cleaned Customer Call List
-![Cleaned Customer Call List](cleaned_customer_call_list.png)
+<img src="images/cleaned_customer_call_list.png" alt="Cleaned customer call list after cleaning is done" width="1000">
